@@ -1,0 +1,84 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "AG AgentGate" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: AG
+        - generic [ref=e6]: AgentGate
+      - navigation [ref=e7]:
+        - link "Quickstart" [ref=e8] [cursor=pointer]:
+          - /url: "#quickstart"
+        - link "Architecture" [ref=e9] [cursor=pointer]:
+          - /url: "#architecture"
+        - link "Open dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+    - main [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Local runtime control for agent tool calls
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - heading "Decide before an agent call executes." [level=1] [ref=e16]
+            - paragraph [ref=e17]: "This repository ships a real local control path: Python SDK interception, FastAPI policy evaluation, SQLite-backed action records, and a dashboard that reflects backend state."
+            - generic [ref=e18]:
+              - link "Open dashboard" [ref=e19] [cursor=pointer]:
+                - /url: /dashboard
+              - link "Read quickstart" [ref=e20] [cursor=pointer]:
+                - /url: "#quickstart"
+          - generic [ref=e21]:
+            - generic [ref=e22]: What this repo actually includes
+            - list [ref=e23]:
+              - listitem [ref=e24]: Python SDK with decorator-based interception
+              - listitem [ref=e25]: FastAPI + SQLite backend for local evaluation and action history
+              - listitem [ref=e26]: Next.js dashboard for feed visibility, approvals, kill switch, and rule editing
+              - listitem [ref=e27]: Demo support agent that exercises the real gate path
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: Quickstart
+          - heading "Run the full local path." [level=2] [ref=e31]
+          - paragraph [ref=e32]: Start the backend, the dashboard, and the demo agent in separate terminals. The dashboard is only useful once the API and agent are running.
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - generic [ref=e35]: Commands
+            - code [ref=e37]: npm install npm run setup:api npm run api npm run dashboard npm run demo:agent
+          - generic [ref=e38]:
+            - generic [ref=e39]: Python SDK example
+            - code [ref=e41]: "import agentgate ag = agentgate.init( api_key=\"ag_demo_key_001\", api_url=\"http://localhost:8000\", agent_name=\"support-agent-prod\", ) @ag.tool(rate_limit=5, rate_window=\"minute\", max_value={\"amount\": 200}) def issue_refund(user_id: str, amount: float): ... @ag.tool(require_approval=True, approval_timeout=90) def delete_account(user_id: str, reason: str): ..."
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: Architecture
+          - heading "The real path in this repository." [level=2] [ref=e45]
+          - paragraph [ref=e46]: There is still no hosted service here. This is a local control plane, but the call path itself is real.
+        - generic [ref=e47]:
+          - article [ref=e48]:
+            - generic [ref=e49]: Backend-owned decisions
+            - paragraph [ref=e50]: The Python SDK sends every decorated tool call to the FastAPI policy service before the wrapped function executes.
+          - article [ref=e51]:
+            - generic [ref=e52]: Hard blocks and kill switch
+            - paragraph [ref=e53]: Rate limits, value caps, and the kill switch are evaluated in the backend. Blocked actions do not run in the demo agent.
+          - article [ref=e54]:
+            - generic [ref=e55]: Manual approval path
+            - paragraph [ref=e56]: High-risk calls pause at the gate, wait for operator approval in the dashboard, and only execute after a release decision.
+          - article [ref=e57]:
+            - generic [ref=e58]: Operational feed
+            - paragraph [ref=e59]: The dashboard streams persisted action records from SQLite, including gate decision, final resolution, and rule context.
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: Current scope
+          - heading "Honest boundaries." [level=2] [ref=e63]
+          - paragraph [ref=e64]: The repo is stronger when it says exactly what it does and what it still does not do.
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: Implemented now
+            - list [ref=e68]:
+              - listitem [ref=e69]: Python SDK with decorator-based interception
+              - listitem [ref=e70]: FastAPI + SQLite backend for local evaluation and action history
+              - listitem [ref=e71]: Next.js dashboard for feed visibility, approvals, kill switch, and rule editing
+              - listitem [ref=e72]: Demo support agent that exercises the real gate path
+          - generic [ref=e73]:
+            - generic [ref=e74]: Still missing
+            - list [ref=e75]:
+              - listitem [ref=e76]: No hosted control plane or multi-tenant auth
+              - listitem [ref=e77]: No LangChain auto-discovery in this repo
+              - listitem [ref=e78]: No non-Python SDKs yet
+              - listitem [ref=e79]: Rules are local to the SQLite store on your machine
+  - alert [ref=e80]

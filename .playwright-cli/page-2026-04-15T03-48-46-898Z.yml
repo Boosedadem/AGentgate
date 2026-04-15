@@ -1,0 +1,114 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "AG AgentGate" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: AG
+        - generic [ref=e6]: AgentGate
+      - generic [ref=e7]:
+        - generic [ref=e8]: feed live
+        - generic [ref=e26]: kill switch off
+    - main [ref=e9]:
+      - complementary [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: Agent
+            - heading "support-agent-prod" [level=2] [ref=e32]
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - term [ref=e35]: Agent ID
+              - definition [ref=e36]: 8563ee5979f0
+            - generic [ref=e37]:
+              - term [ref=e38]: Registered
+              - definition [ref=e39]: 29s ago
+            - generic [ref=e40]:
+              - term [ref=e41]: API
+              - definition [ref=e42]: http://localhost:8000
+          - button "Enable kill switch" [ref=e43] [cursor=pointer]
+        - generic [ref=e44]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: Control plane health
+            - heading "Local store" [level=2] [ref=e48]
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - term [ref=e51]: SQLite path
+              - definition [ref=e52]: /Users/tristanseiersen/.gemini/antigravity/scratch/agentgate/api/agentgate.db
+            - generic [ref=e53]:
+              - term [ref=e54]: Agents
+              - definition [ref=e55]: "1"
+            - generic [ref=e56]:
+              - term [ref=e57]: Actions
+              - definition [ref=e58]: "1"
+            - generic [ref=e59]:
+              - term [ref=e60]: Pending approvals
+              - definition [ref=e61]: "0"
+          - paragraph [ref=e62]: The dashboard shows backend truth from FastAPI and SQLite. It does not generate tool calls on its own.
+        - generic [ref=e63]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: Policies
+            - heading "Editable rule values" [level=2] [ref=e67]
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]: trigger_workflow
+                - generic [ref=e72]: Manual approval
+              - generic [ref=e73]: manual
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - generic [ref=e76]: trigger_workflow
+                - generic [ref=e77]: estimated_cost <= 5000
+              - spinbutton [ref=e78]: "5000"
+        - generic [ref=e79]:
+          - generic [ref=e81]:
+            - generic [ref=e82]: Local demo
+            - heading "Drive the feed" [level=2] [ref=e83]
+          - code [ref=e85]: npm run demo:agent
+          - paragraph [ref=e86]: The demo agent uses the Python SDK and will only execute tool bodies after the backend releases the call.
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - article [ref=e89]:
+            - generic [ref=e90]: Action records
+            - generic [ref=e91]: "1"
+          - article [ref=e92]:
+            - generic [ref=e93]: Released
+            - generic [ref=e94]: "1"
+          - article [ref=e95]:
+            - generic [ref=e96]: Blocked
+            - generic [ref=e97]: "0"
+          - article [ref=e98]:
+            - generic [ref=e99]: Approval path
+            - generic [ref=e100]: "1"
+        - generic [ref=e145]: Pending action released.
+        - generic [ref=e101]:
+          - generic [ref=e103]:
+            - generic [ref=e104]: Pending approvals
+            - heading "Queue is empty" [level=2] [ref=e146]
+          - paragraph [ref=e147]: High-risk actions will stop here until an operator approves or denies them.
+        - generic [ref=e118]:
+          - generic [ref=e120]:
+            - generic [ref=e121]: Action feed
+            - heading "Recent tool calls" [level=2] [ref=e122]
+          - article [ref=e124]:
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - generic [ref=e127]: trigger_workflow
+                - generic [ref=e128]: "#1 · 29s ago · released just now"
+              - generic [ref=e129]:
+                - generic [ref=e130]: REQUIRE_APPROVAL
+                - generic [ref=e131]: released
+            - generic [ref=e132]:
+              - generic [ref=e133]: Released after approval
+              - generic [ref=e134]: Approved by operator.
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - term [ref=e137]: workflow_name
+                - definition [ref=e138]: backfill_subscriptions
+              - generic [ref=e139]:
+                - term [ref=e140]: estimated_cost
+                - definition [ref=e141]: "1200"
+              - generic [ref=e142]:
+                - term [ref=e143]: priority
+                - definition [ref=e144]: normal
+  - button "Open Next.js Dev Tools" [ref=e21] [cursor=pointer]:
+    - img [ref=e22]
+  - alert [ref=e25]

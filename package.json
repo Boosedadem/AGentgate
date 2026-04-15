@@ -4,6 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dashboard": "next dev",
+    "typecheck": "tsc --noEmit",
+    "setup:api": "rm -rf .venv && python3 -m venv .venv && ./.venv/bin/python -m pip install --upgrade pip && ./.venv/bin/pip install -r api/requirements.txt -e ./sdk",
+    "reset:state": "rm -f api/agentgate.db",
+    "api": "PYTHONPATH=. ./.venv/bin/uvicorn api.main:app --reload --reload-dir api",
+    "demo:agent": "AGENTGATE_DASHBOARD_URL=http://localhost:3000/dashboard ./.venv/bin/python demo-agent/agent.py",
+    "test:api": "PYTHONPATH=. ./.venv/bin/python -m unittest discover -s api/tests -p 'test_*.py'",
+    "check": "npm run lint && npm run typecheck && npm run build",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

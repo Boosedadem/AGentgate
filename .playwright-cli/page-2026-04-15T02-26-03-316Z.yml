@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: ⛊
+        - text: AgentGate
+      - generic [ref=e6]:
+        - link "Features" [ref=e7] [cursor=pointer]:
+          - /url: "#features"
+        - link "Integration" [ref=e8] [cursor=pointer]:
+          - /url: "#code"
+        - link "Live Demo →" [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+    - generic [ref=e10]:
+      - generic [ref=e11]: Runtime control for AI agents
+      - heading "Your AI agent can't break anything." [level=1] [ref=e13]:
+        - text: Your AI agent
+        - text: can't break anything.
+      - paragraph [ref=e14]: Every action your agent takes passes through AgentGate before it executes. Set limits. Block dangerous actions. Kill rogue agents instantly. Your agent does what you allow. Nothing else.
+      - generic [ref=e15]:
+        - link "See the live demo" [ref=e16] [cursor=pointer]:
+          - /url: /dashboard
+        - link "View integration" [ref=e17] [cursor=pointer]:
+          - /url: "#code"
+    - generic [ref=e18]:
+      - heading "One line. Full control." [level=2] [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e25]: agent.py
+        - generic [ref=e27]: "import agentgate agentgate.init(\"ag_live_abc123\") # That's it. Every tool call is now gated. # Default rate limits: active # Kill switch: ready # Dashboard: streaming live # Your existing agent code — completely unchanged. agent = create_support_agent(tools=[email, refund, crm]) agent.run()"
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Control, not monitoring." [level=2] [ref=e30]
+        - paragraph [ref=e31]: Other tools watch and record. AgentGate decides — before the action executes.
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: ⛔
+          - heading "Pre-Execution Gates" [level=3] [ref=e35]
+          - paragraph [ref=e36]: Every agent action passes through AgentGate before it fires. Rate limits, value caps, and blocklists are enforced before execution — not logged after.
+        - generic [ref=e37]:
+          - generic [ref=e38]: ✅
+          - heading "Auto-Instrumentation" [level=3] [ref=e39]
+          - paragraph [ref=e40]: One line of code. AgentGate auto-discovers your LangChain tools and gates every call. No decorators. No config files. No changes to your existing code.
+        - generic [ref=e41]:
+          - generic [ref=e42]: 🔴
+          - heading "Instant Kill Switch" [level=3] [ref=e43]
+          - paragraph [ref=e44]: One button. Agent stops. Every action returns blocked. No propagation delay. No waiting for a deploy. Revive when you're ready.
+        - generic [ref=e45]:
+          - generic [ref=e46]: 📊
+          - heading "Live Action Feed" [level=3] [ref=e47]
+          - paragraph [ref=e48]: See every action your agent takes in real time. Allowed, blocked, or pending — with full parameters and gate reasoning. Know exactly what's happening.
+        - generic [ref=e49]:
+          - generic [ref=e50]: ⚡
+          - heading "Smart Rate Limits" [level=3] [ref=e51]
+          - paragraph [ref=e52]: Default safety limits activate instantly. Customize per-tool from the dashboard — no redeployment needed. Changes take effect in seconds.
+        - generic [ref=e53]:
+          - generic [ref=e54]: 🛡️
+          - heading "Damage Prevention" [level=3] [ref=e55]
+          - paragraph [ref=e56]: See estimated damage prevented daily. Know exactly how many runaway loops, excess refunds, and unintended actions AgentGate stopped.
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]: <50ms
+        - generic [ref=e61]: Gate evaluation latency
+      - generic [ref=e62]:
+        - generic [ref=e63]: 1 line
+        - generic [ref=e64]: To full agent control
+      - generic [ref=e65]:
+        - generic [ref=e66]: "0"
+        - generic [ref=e67]: Code changes required
+    - generic [ref=e69]:
+      - heading "See it in action." [level=2] [ref=e70]
+      - paragraph [ref=e71]: Watch a simulated AI agent hit rate limits, get blocked, and respond to a kill switch — all in real time.
+      - generic [ref=e72]:
+        - generic [ref=e73]: $
+        - text: pip install agentgate
+      - link "Open live demo →" [ref=e74] [cursor=pointer]:
+        - /url: /dashboard
+    - contentinfo [ref=e75]: AgentGate — The runtime control layer for AI agents.
+  - button "Open Next.js Dev Tools" [ref=e81] [cursor=pointer]:
+    - img [ref=e82]
+  - alert [ref=e85]

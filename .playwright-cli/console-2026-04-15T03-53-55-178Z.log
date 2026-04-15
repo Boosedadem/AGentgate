@@ -1,0 +1,43 @@
+[     108ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     117ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[   29284ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   30286ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   30829ms] [ERROR] Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   30865ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:8000/api/health:0
+[   30865ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://localhost:8000/api/agents:0
+[   31288ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   32290ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   33293ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   33831ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   35223ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/health:0
+[   35224ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/agents:0
+[   36834ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   38297ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   39836ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   40222ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/health:0
+[   40222ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/agents:0
+[   42839ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   43299ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   45223ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/health:0
+[   45223ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/agents:0
+[   45841ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   48304ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   48843ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   50223ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/health:0
+[   50223ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/agents:0
+[   51845ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   53307ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   54848ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   55224ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/health:0
+[   55224ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/agents:0
+[   57850ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   58311ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   60224ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/health:0
+[   60224ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/agents:0
+[   60853ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   63317ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299
+[   63855ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   65223ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/health:0
+[   65223ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/agents:0
+[   66857ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:8000/api/stream/1d8882cb2a94:0
+[   68324ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=l82qqHQ0LbR5aZFPF2973' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13299

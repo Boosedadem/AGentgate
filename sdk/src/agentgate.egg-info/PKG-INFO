@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: agentgate
+Version: 0.1.0
+Summary: Local Python SDK for the AgentGate demo control plane
+Requires-Python: >=3.9
+Requires-Dist: requests<3,>=2.28
+Requires-Dist: urllib3<2
